@@ -18,14 +18,13 @@ Console.WriteLine();
 Console.WriteLine("Массив:");
 PrintArray(numbers);
 
-
 for (int i = 0; i < numbers.GetLength(0); i++)
 {
     for (int j = 0; j < numbers.GetLength(1) - 1; j++)
     {
         for (int z = 0; z < numbers.GetLength(1) - 1; z++)
         {
-            if (numbers[i, z] < numbers[i, z + 1]) //для изменения сортировки поменять знак < на противоположный
+            if (numbers[i, z] < numbers[i, z + 1]) 
             {
                 int temp = 0;
                 temp = numbers[i, z];
